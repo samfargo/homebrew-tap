@@ -5,13 +5,13 @@
 class Hexatiles < Formula
   desc "Parquet → H3 polygons → PMTiles in one command"
   homepage "https://github.com/samfargo/HexaTiles"
-  version "0.2.0"
+  version "hexatiles-v0.1.10"
   license "Apache-2.0"
   depends_on :macos
 
   if Hardware::CPU.arm?
-    url "https://github.com/samfargo/HexaTiles/releases/download/v0.2.0/hexatiles_0.2.0_darwin_arm64.tar.gz"
-    sha256 "3373ef2abc795e30d1295ca866d05c7683e72cb968987c848aa0f68e4fc3987d"
+    url "https://github.com/samfargo/HexaTiles/releases/download/hexatiles-v0.1.10/hexatiles_hexatiles-v0.1.10_darwin_arm64.tar.gz"
+    sha256 "88ded3a32054c0a732d94352b8ac84c9ff9c6c3049a3b55f0ad5024649d01693"
 
     def install
       bin.install "hexatiles"
